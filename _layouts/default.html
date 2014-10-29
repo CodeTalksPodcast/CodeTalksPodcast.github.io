@@ -16,11 +16,12 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <script src="../scripts/senna-min.js"></script>
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
+  <body data-senna>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -39,7 +40,7 @@
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
+    <div id="main" role="main" class="container" data-senna-surface>
       {{ content }}
     </div>
 
