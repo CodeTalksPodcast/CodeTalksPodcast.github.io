@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ site.description }}">
@@ -16,33 +16,43 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <script src="../scripts/senna-min.js"></script>
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <link rel="stylesheet" type="text/css" href="../scripts/senna/senna.css" />
+    <script src="../scripts/senna/senna-min.js"></script>
   </head>
 
   <body data-senna>
+  
+    <div class="podcast-player">
+      <a href="#" class="play">play</a>
+      <span class="current-time">00:00</span>
+      <span class="final-time">00:00</span>
+        <div class="progress">
+            <div class="internal-progress">
+                
+            </div>
+        </div>
+    </div>
+  
+  <div class="senna-loading-bar"></div>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-          
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-          
+          <a href="{{ site.baseurl }}/" class="logo"><img src="../images/code.png" /></a>
+            
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/">Podcast</a>
+            <a href="{{ site.baseurl }}/sobre">Sobre</a>
+            <a href="{{ site.baseurl }}/contato">Contato</a>
           </nav>
         </header>
       </div>
     </div>
 
    
-    <div id="main" role="main" class="container">
-      <div data-senna-surface>{{ content }}</div>
+    <div id="main" role="main" class="container" data-senna-surface>
+        <div id="main-default">
+            {{ content }}
+        </div>
     </div>
 
 
