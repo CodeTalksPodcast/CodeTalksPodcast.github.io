@@ -72,7 +72,7 @@ function timeUpdate() {
     
     for(i = 0; i<lis_sec.length; i++) {
         var currentid = lis_sec[i].id.split("-");
-        var currentidtime = (parseInt(currentid[1])*60)+parseInt(currentid[2]);
+        var currentidtime = (parseInt(currentid[1])*60*60)+ (parseInt(currentid[2])*60)+parseInt(currentid[3]);
     
         
         if(music.currentTime >= currentidtime){
@@ -108,7 +108,7 @@ window.addEventListener("hashchange", funcRef, false);
 
 function funcRef(){
     var time = location.hash.substring(1).split(':');
-    music.currentTime = (parseInt(time[0])*60)+parseInt(time[1]);
+    music.currentTime = (parseInt(time[0])*60*60)+(parseInt(time[1])*60)+parseInt(time[2]);
 }
 
 function secondsToTime(secs)
