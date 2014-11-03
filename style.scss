@@ -18,9 +18,13 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+}
+
+.senna-loading-bar {
+    height: 10px;    
 }
 
 .container {
@@ -35,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;
   
-  line-height: 1.7;
+  line-height: 1.2;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -197,70 +201,76 @@ nav {
 //
 // .player
 //
-.podcast-player {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    color: #fff;
-    height: 51px;
-    line-height: 50px;
-    vertical-align: middle;
-    border-top: 1px solid #555;
-    
-    .play {
-        background: RGBA(255, 128, 255, .5);
-        height: 50px;
-        width: 60px;
-        display: block;
-        color: #fff;
-        text-align: center;
-        float: left;
-        border-left: 10px solid #FF80FF;
-    }  
-    
-    .current-time {
-        background: RGBA(255, 128, 255, .6);
-        height: 50px;
-        width: 60px;
-        display: block;
-        color: #fff;
-        text-align: center;
-        float: left;
-    }  
-    
-    .final-time {
-        background: RGBA(128, 255, 128, .6);
-        height: 50px;
-        width: 70px;
-        display: block;
-        color: #fff;
-        text-align: center;
-        float: right;
-    border-right: 10px solid #80FF80;
-    }
-    
-    .title-lol {
-         margin: 5px 0 0;
-         text-align: center;
-    }
-    
-    .progress {
-        background: #000;
-        width: 100%;
-        height: 50px;
-        box-sizing: border-box;
-        padding: 0 70px 0 120px;
-        
-        .internal-progress {
-            background: #333;
-            width: 1%;
-            height: 50px;
-        }
-    }
-    
+#audioplayer img {
+    padding: 0;
+    margin: 0;
 }
+
+#play-btn {
+    height: 50px; 
+    width: 90px;
+    float:left;
+    background: #FF80FF;
+    border: 0;
+    font-family: 'Code-Pro-Demo', $helveticaNeue;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: rgba(0,0,0,.85);
+    outline: none;
+}
+
+#timeline-wrapper {
+	width: 100%;
+    background: #222;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 90px;
+    padding-right: 150px;
+}
+
+#timeline{
+	width: 100%;
+	height: 50px;
+    box-sizing: border-box;
+}
+
+.time-overlay {
+    float: right;
+    width: 150px;
+    background: #808080;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+#playhead{
+	width: 10px;
+	height: 50px;
+	background: #80FF80;
+
+}
+
+#podcast-sections {
+    background: #333;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+#podcast-sections li {
+    list-style: none;
+    padding: 0;
+}
+
+
+#podcast-sections li.now {
+     font-weight: 700;
+}
+
+#podcast-sections li.played a {
+    color: #80FF80;
+}
+
 
 //
 // .main

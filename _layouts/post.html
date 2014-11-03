@@ -3,11 +3,36 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <h1>CodeTalks #{{ page.episode }}: {{ page.title }}</h1>
 
   <div class="entry">
     {{ content }}
+    
+    
+    <div id="audioplayer">
+        <audio id="music" preload="true">
+            <source src="{{ page.mp3url }}">
+			<source src="{{ page.oggurl }}">
+	    </audio>
+       
+        <button id="play-btn" class="play" onclick="play()">play</button>
+          <div class="time-overlay">
+              <span id="current-time-play">00:00</span> / {{ page.fulltime }}
+          </div>
+          <div id="timeline-wrapper">
+              <div id="timeline">
+                  <div id="playhead"></div>
+              </div>
+          </div>
+          <div style="clear: both;"></div>
+          <ul id="podcast-sections">
+            {% for section in page.sections %}<li id="sec-{{ section.time | replace: ':', '-'}}">
+                <a href="#{{ section.time }}">{{ section.name }}</a>
+            </li>{% endfor %}
+          </ul>
+        <img src="../images/{{page.episode}}.png" />
   </div>
+  <script src="../scripts/player.js"></script>
 
   <div class="date">
     Publicado em {{ page.date | date: "%B %e, %Y" }}
