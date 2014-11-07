@@ -34,14 +34,14 @@ layout: null
         <link>{{ site.url }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
         
-      <itunes:author>CodeTalks</itunes:author>
-      <itunes:subtitle>{{ post.convidado }}</itunes:subtitle>
-      <itunes:summary></itunes:summary>
-      <itunes:image href="http://codetalks.net/images/{{post.episode}}.png" />
-      <enclosure url="{{ post.m4aurl }}" length="{{ post.fulltime }}" type="audio/x-m4a" />
-      <guid>{{ post.m4aurl }}</guid>
-      <itunes:duration>{{ post.fulltime }}</itunes:duration>
-      <itunes:keywords>{{ post.tags }}</itunes:keywords>
+          <itunes:author>CodeTalks</itunes:author>
+          <itunes:subtitle>{{ post.convidado }}</itunes:subtitle>
+          <itunes:summary></itunes:summary>
+          <itunes:image href="http://codetalks.net/images/{{post.episode}}.png" />
+          <enclosure url="{{ post.m4aurl }}" length="{{ post.fulltime }}" type="audio/x-m4a" />
+          <guid>{{ post.m4aurl }}</guid>
+          <itunes:duration>{{ post.fulltime }}</itunes:duration>
+          <itunes:keywords>{{ post.tags }}</itunes:keywords>
       </item>
     {% endfor %}
   </channel>
