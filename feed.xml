@@ -8,10 +8,8 @@ layout: null
     <language>pt-br</language>
     <link>{{ site.url }}</link>
     <copyright>&#x2117; &amp; &#xA9; 2014 Daniel Castro &amp; Joselito Junior</copyright>
-    <itunes:subtitle>
-        Frontend, frontin, backend, humor, google e muito código.
-    </itunes:subtitle>
-    <itunes:author>Daniel Castro & Joselito Júnior</itunes:author>
+    <itunes:subtitle>Frontend, frontin, backend, humor, google e muito código.</itunes:subtitle>
+    <itunes:author>Daniel Castro &amp; Joselito Júnior</itunes:author>
     <itunes:summary>
     O CodeTalks é um podcast mensal que traz entrevistas sobre os mais diversos temas no mundo da tecnologia, divulgação de eventos, reviews e tudo sobre o Google no último mês, tudo com muito bom humor.
     </itunes:summary>
@@ -35,6 +33,15 @@ layout: null
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>{{ site.url }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        
+      <itunes:author>CodeTalks</itunes:author>
+      <itunes:subtitle>{{ post.convidado }}</itunes:subtitle>
+      <itunes:summary></itunes:summary>
+      <itunes:image href="http://codetalks.net/images/{{post.episode}}.png" />
+      <enclosure url="{{ post.m4aurl }}" length="{{ post.fulltime }}" type="audio/x-m4a" />
+      <guid>{{ post.m4aurl }}</guid>
+      <itunes:duration>{{ post.fulltime }}</itunes:duration>
+      <itunes:keywords>{{ post.tags }}</itunes:keywords>
       </item>
     {% endfor %}
   </channel>
