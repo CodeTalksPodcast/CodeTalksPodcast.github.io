@@ -4,14 +4,30 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
+    <title>CodeTalks</title>
     <language>pt-br</language>
-    
-    <copyright>&#x2117; &amp; &#xA9; 2014 Daniel Castro &amp; Joselito Júnior</copyright>
-    
     <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+    <copyright>&#x2117; &amp; &#xA9; 2014 Daniel Castro &amp; Joselito Junior</copyright>
+    <itunes:subtitle>
+        Frontend, frontin, backend, humor, google e muito código.
+    </itunes:subtitle>
+    <itunes:author>Daniel Castro & Joselito Júnior</itunes:author>
+    <itunes:summary>
+    O CodeTalks é um podcast mensal que traz entrevistas sobre os mais diversos temas no mundo da tecnologia, divulgação de eventos, reviews e tudo sobre o Google no último mês, tudo com muito bom humor.
+    </itunes:summary>
+    <itunes:explicit>no</itunes:explicit>
+    <description>
+    O CodeTalks é um podcast mensal que traz entrevistas sobre os mais diversos temas no mundo da tecnologia, divulgação de eventos, reviews e tudo sobre o Google no último mês, tudo com muito bom humor.
+    </description>
+    <itunes:owner>
+        <itunes:name>Joselito Júnior</itunes:name>
+        <itunes:email>eu@joselitojunior.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="http://codetalks.net/images/logo-square.png"/>
+    <itunes:category text="Technology">
+        <itunes:category text="Tech News"/>
+    </itunes:category>
+      
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>

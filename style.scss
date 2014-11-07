@@ -317,6 +317,31 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+    
+footer h1 {
+ font-weight: 400;   
+    font-size: 1.25em;
+}
+
+.horizontal-list li { display: inline; }
+
+.clean-list { padding: 0; }
+    
+.clean-list li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.apoio-icon img, .parceiros-icon img {
+     height: 60px;
+    width: auto;
+    margin: 0 10px;
+}
+
+.parceiros-icon img { height: 100px; }
+
+.copy {font-size: 0.8em; margin: 50px 0}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

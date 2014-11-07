@@ -27,7 +27,7 @@ layout: default
           <div style="clear: both;"></div>
           <ul id="podcast-sections">
             {% for section in page.sections %}<li id="sec-{{ section.time | replace: ':', '-'}}">
-                <a href="#{{ section.time }}">{{ section.name }}</a>
+                <a href="#{{ section.time }}">{{ section.time }} - {{ section.name }}</a>
             </li>{% endfor %}
           </ul>
         <img src="../images/{{page.episode}}.png" />
