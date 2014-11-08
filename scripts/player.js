@@ -76,7 +76,6 @@ function timeUpdate() {
     
         
         if(music.currentTime >= currentidtime){
-            console.log("entrou");
             lis_sec[i].classList.add("played");   
         } else {
             lis_sec[i].classList.remove("played"); 
