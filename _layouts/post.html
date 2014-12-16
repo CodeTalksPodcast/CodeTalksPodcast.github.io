@@ -7,7 +7,8 @@ layout: default
 
   <div class="entry">
     {{ content }}
-    
+    <br />
+    <a href="{{ page.m4aurl }}" class="download-btn">Download .m4a</a> <a href="{{ page.zipurl }}" class="download-btn">Download .zip</a>
     
     <div id="audioplayer">
         <audio id="music" preload="true">
@@ -16,7 +17,7 @@ layout: default
        
         <button id="play-btn" class="play" onclick="play()">play</button>
           <div class="time-overlay">
-              <span id="current-time-play">00:00</span> / {{ page.fulltime }}
+              <span id="current-time-play">0:00:00</span> / {{ page.fulltime }}
           </div>
           <div id="timeline-wrapper">
               <div id="timeline">

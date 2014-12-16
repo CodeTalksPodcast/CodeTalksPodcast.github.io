@@ -201,6 +201,10 @@ nav {
 //
 // .player
 //
+#audioplayer {
+    margin-top: 13px;
+}
+
 #audioplayer img {
     padding: 0;
     margin: 0;
@@ -225,7 +229,7 @@ nav {
     height: 50px;
     box-sizing: border-box;
     padding-left: 90px;
-    padding-right: 150px;
+    padding-right: 160px;
 }
 
 #timeline{
@@ -236,7 +240,7 @@ nav {
 
 .time-overlay {
     float: right;
-    width: 150px;
+    width: 160px;
     background: #808080;
     text-align: center;
     height: 50px;
@@ -301,6 +305,9 @@ nav {
   }
 
   .read-more {
+    background: rgb(255, 128, 255);
+    color: #fff;
+    padding: 10px;
     text-transform: uppercase;
     font-size: 15px;
   }
@@ -342,6 +349,12 @@ footer h1 {
 .parceiros-icon img { height: 100px; }
 
 .copy {font-size: 0.8em; margin: 50px 0}
+
+.download-btn {
+    background: RGB(128, 255, 128);
+    padding: 10px;
+    color: RGB(0, 0, 0);
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

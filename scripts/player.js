@@ -64,7 +64,7 @@ function moveplayhead(e) {
 function timeUpdate() {
 	var playPercent = timelineWidth * (music.currentTime / duration);
     var ob = secondsToTime(parseInt(music.currentTime));
-    curTime.innerHTML = ob.m + ":" + ob.s;
+    curTime.innerHTML = ob.h + ":" + ob.m + ":" + ob.s;
 	playhead.style.marginLeft = playPercent + "px";
 	if (music.currentTime == duration) {
 		pButton.innerHTML = "play";
