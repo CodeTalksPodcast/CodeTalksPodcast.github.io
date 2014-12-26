@@ -202,7 +202,7 @@ nav {
 // .player
 //
 #audioplayer {
-    margin-top: 13px;
+    margin-top: 5px;
 }
 
 #audioplayer img {
@@ -355,6 +355,14 @@ footer h1 {
     padding: 10px;
     color: RGB(0, 0, 0);
 }
+
+.share-block {background: #f4f4f4;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 14px; 
+}
+        
+.share-block h3 {margin: 0 0 20px; padding: 0; color: #777}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

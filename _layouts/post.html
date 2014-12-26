@@ -6,10 +6,26 @@ layout: default
   <h1>CodeTalks #{{ page.episode }}: {{ page.title }}</h1>
 
   <div class="entry">
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
     {{ content }}
     <br />
     <a href="{{ page.m4aurl }}" class="download-btn">Download .m4a</a> <a href="{{ page.zipurl }}" class="download-btn">Download .zip</a>
     
+    <div class="share-block">
+    <h3>Compartilhe</h3>
+    
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_pocket"></a>
+<a class="a2a_button_pinterest"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_email"></a>
+</div>
+  
+  </div>
+   
     <div id="audioplayer">
         <audio id="music" preload="true">
             <source src="{{ page.m4aurl }}">
