@@ -4,12 +4,12 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <title>CodeTalks</title>
+    <title>Code Talks</title>
     <language>pt-br</language>
     <link>{{ site.url }}</link>
-    <copyright>&#x2117; &amp; &#xA9; 2014 Daniel Castro &amp; Joselito Junior</copyright>
+    <copyright>&#x2117; &amp; &#xA9; 2014 Joselito Junior</copyright>
     <itunes:subtitle>Frontend, frontin, backend, humor, google e muito código.</itunes:subtitle>
-    <itunes:author>Daniel Castro &amp; Joselito Júnior</itunes:author>
+    <itunes:author>Joselito Júnior</itunes:author>
     <itunes:summary>
     O CodeTalks é um podcast mensal que traz entrevistas sobre os mais diversos temas no mundo da tecnologia, divulgação de eventos, reviews e tudo sobre o Google no último mês, tudo com muito bom humor.
     </itunes:summary>
@@ -21,11 +21,11 @@ layout: null
         <itunes:name>Joselito Júnior</itunes:name>
         <itunes:email>eu@joselitojunior.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="http://codetalks.net/images/logo-square.png"/>
+    <itunes:image href="http://feed.codetalks.net/icon-512.png"/>
     <itunes:category text="Technology">
         <itunes:category text="Tech News"/>
     </itunes:category>
-      
+
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
@@ -33,7 +33,7 @@ layout: null
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>{{ site.url }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-        
+
           <itunes:author>CodeTalks</itunes:author>
           <itunes:subtitle>{{ post.convidado }}</itunes:subtitle>
           <itunes:summary></itunes:summary>

@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: CodeTalks
+name: Code Talks
 
 # Short bio or description (displayed in the header)
 description: Um podcast sobre desenvolvimento com uma pitada de humor (e Google)
@@ -17,29 +17,29 @@ avatar: https://avatars0.githubusercontent.com/u/8839495?v=2&s=460
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble: 
+  dribbble:
   email: contato@codetalks.net
   facebook: codetalks
-  flickr: 
-  github: CodeTalksPodcast
-  instagram: 
-  linkedin: 
-  pinterest: 
+  flickr:
+  github: code-talks
+  instagram:
+  linkedin:
+  pinterest:
   rss: yip
-  twitter: codetalks_pod
+  twitter: code_talks
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 default_locale: "pt-BR"
 # Your disqus shortname, entering this will enable commenting on posts
-disqus: codetalks
+#disqus: codetalks
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+#google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://www.codetalks.net
+url: http://feed.codetalks.net
 
-# If you're hosting your site at a Project repository on GitHub pages 
+# If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
