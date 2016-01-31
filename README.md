@@ -1,6 +1,3 @@
-# CodeTalks
+# Code Talks - Feed
 
-Este é o repositório do site do [CodeTalks](http://codetalks.net). Fique à vontade, a casa é sua.
-
-## TO-DO
-- [ ] Um README.md melhor
+Repositório para gerar o feed para o podcast do [Code Talks](https://codetalks.net)
