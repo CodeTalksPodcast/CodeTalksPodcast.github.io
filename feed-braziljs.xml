@@ -21,7 +21,7 @@ layout: null
         <itunes:name>Joselito Júnior</itunes:name>
         <itunes:email>eu@joselitojunior.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="http://feed.codetalks.net/icon-512.png"/>
+    <itunes:image href="http://feed.codetalks.net/icon.png"/>
     <itunes:category text="Technology">
         <itunes:category text="Tech News"/>
     </itunes:category>
@@ -33,7 +33,6 @@ layout: null
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>{{ site.url }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-
           <itunes:author>Code Talks</itunes:author>
           <itunes:subtitle>{{ post.convidado }}</itunes:subtitle>
           <itunes:summary></itunes:summary>
